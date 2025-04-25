@@ -59,10 +59,10 @@ const Header = () => {
         ]}
       >
         <Image
-          source={require('../assets/Icons/user.png')}
+          source={require('../assets/Icons/logout.png')}
           style={[
-            styles.avatar,
-            isTablet && styles.tabletAvatar,
+            styles.icon,{height: verticalScale(19), width: verticalScale(19)},
+            isTablet && styles.tabletIcon,
           ]}
         />
       </TouchableOpacity>
@@ -102,17 +102,6 @@ const styles = StyleSheet.create({
   tabletIcon: {
     width: scale(22),
     height: scale(22),
-  },
-  avatar: {
-    width: scale(28),
-    height: scale(28),
-    borderRadius: scale(16),
-    tintColor: '#fff',
-  },
-  tabletAvatar: {
-    width: scale(20),
-    height: scale(20),
-    borderRadius: scale(24),
   },
   Search: {
     width: '70%',

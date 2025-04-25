@@ -18,8 +18,9 @@ const AuthrizationScreen = ({navigation}) => {
       return;
     }
     if(email == 'admin.com' && password == 'admin'){
-      navigation.navigate('Home')
+      navigation.navigate('Footer')
     }
+    
     
   }
   const handleSignUp = async() =>{
